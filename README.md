@@ -35,10 +35,30 @@ TMDB_API_KEY=your_tmdb_api_key_here
 streamlit run app.py
 ```
 
+### 📦 Dataset and Artifacts
+All required files for this app (including pickles and raw CSVs) are hosted publicly here:
+
+
+[[`movie-rec`]]( https://huggingface.co/datasets/saakshammm/movie-rec/tree/main/data)
+
+```
+Includes:
+
+tmdb_5000_movies.csv
+
+tmdb_5000_credits.csv
+
+movie_list.pkl
+
+similarity.pkl
+```
 📁 Project Structure
 ```angular2html
 .
 ├── app.py
+├── data/
+│   ├── tmdb_5000_credits.csv
+│   └── tmdb_5000_movies.csv
 ├── artifacts/
 │   ├── movie_list.pkl
 │   └── similarity.pkl
@@ -47,6 +67,18 @@ streamlit run app.py
 └── README.md
 ```
 
+### 🌐 Deployment
+This app is ready for free hosting via Streamlit Cloud.
+
+Push the code to a GitHub repo
+
+Go to Streamlit Cloud and deploy the repo
+
+Set the TMDB key via "Secrets" in Streamlit:
+
+Key: TMDB_API_KEY
+
+Value: your_actual_key
 
 🧠 Built With
 ```angular2html
@@ -62,8 +94,8 @@ Pickle
 
 This app requires two `.pkl` files to run locally:
 
-- [`movie_list.pkl`]([https://drive.google.com/file/d/10-fy6yDd5ijhwn9keAe7oGU1MBXhO178/view?usp=sharing](https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/blob/main/movie_list.pkl))
-- [`similarity.pkl`]([https://drive.google.com/file/d/102huNjyF6_IIhDuR3HxX-oNsbFb6j9Y_/view?usp=sharing](https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/blob/main/similarity.pkl))
+- [`movie_list.pkl`](https://drive.google.com/file/d/10-fy6yDd5ijhwn9keAe7oGU1MBXhO178/view?usp=sharing)
+- [`similarity.pkl`](https://drive.google.com/file/d/102huNjyF6_IIhDuR3HxX-oNsbFb6j9Y_/view?usp=sharing)
 
 Place them inside a local `artifacts/` folder like this:
 
@@ -73,22 +105,8 @@ Place them inside a local `artifacts/` folder like this:
 Select a movie → Get recommendations → See poster previews instantly.
 ![img.png](img.png)
 ![img_1.png](img_1.png)
-
 ### 🔐 Note on Security
 Your TMDB API key is loaded securely from environment variables using python-dotenv. Never hardcode keys.
-
-### 🌐 Deployment
-This app is ready for free hosting via Streamlit Cloud.
-
-Push the code to a GitHub repo
-
-Go to Streamlit Cloud and deploy the repo
-
-Set the TMDB key via "Secrets" in Streamlit:
-
-Key: TMDB_API_KEY
-
-Value: your_actual_key
 
 ### 👤 Author
 Saksham Kumar

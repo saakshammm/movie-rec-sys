@@ -16,8 +16,8 @@ def load_pickle_from_url(url):
     return pickle.loads(response.content)
 
 # Hugging Face URLs
-movie_list_url = "https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/resolve/main/movie_list.pkl"
-similarity_url = "https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/resolve/main/similarity.pkl"
+movie_list_url = "https://huggingface.co/datasets/saakshammm/movie-rec/resolve/main/artifacts/%20movie_list.pkl"
+similarity_url = "https://huggingface.co/datasets/saakshammm/movie-rec/resolve/main/artifacts/%20similarity.pkl"
 
 # Load data
 movies = load_pickle_from_url(movie_list_url)
