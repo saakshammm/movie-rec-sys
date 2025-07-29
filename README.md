@@ -47,18 +47,6 @@ streamlit run app.py
 └── README.md
 ```
 
-### 🌐 Deployment
-This app is ready for free hosting via Streamlit Cloud.
-
-Push the code to a GitHub repo
-
-Go to Streamlit Cloud and deploy the repo
-
-Set the TMDB key via "Secrets" in Streamlit:
-
-Key: TMDB_API_KEY
-
-Value: your_actual_key
 
 🧠 Built With
 ```angular2html
@@ -85,8 +73,22 @@ Place them inside a local `artifacts/` folder like this:
 Select a movie → Get recommendations → See poster previews instantly.
 ![img.png](img.png)
 ![img_1.png](img_1.png)
+
 ### 🔐 Note on Security
 Your TMDB API key is loaded securely from environment variables using python-dotenv. Never hardcode keys.
+
+### 🌐 Deployment
+This app is ready for free hosting via Streamlit Cloud.
+
+Push the code to a GitHub repo
+
+Go to Streamlit Cloud and deploy the repo
+
+Set the TMDB key via "Secrets" in Streamlit:
+
+Key: TMDB_API_KEY
+
+Value: your_actual_key
 
 ### 👤 Author
 Saksham Kumar
