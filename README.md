@@ -74,8 +74,8 @@ Pickle
 
 This app requires two `.pkl` files to run locally:
 
-- [`movie_list.pkl`](https://drive.google.com/file/d/10-fy6yDd5ijhwn9keAe7oGU1MBXhO178/view?usp=sharing)
-- [`similarity.pkl`](https://drive.google.com/file/d/102huNjyF6_IIhDuR3HxX-oNsbFb6j9Y_/view?usp=sharing)
+- [`movie_list.pkl`]([https://drive.google.com/file/d/10-fy6yDd5ijhwn9keAe7oGU1MBXhO178/view?usp=sharing](https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/blob/main/movie_list.pkl))
+- [`similarity.pkl`]([https://drive.google.com/file/d/102huNjyF6_IIhDuR3HxX-oNsbFb6j9Y_/view?usp=sharing](https://huggingface.co/datasets/saakshammm/movie-rec-artifacts/blob/main/similarity.pkl))
 
 Place them inside a local `artifacts/` folder like this:
 
