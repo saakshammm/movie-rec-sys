@@ -2,60 +2,56 @@
 
 This is a simple movie recommender system built using content-based filtering. It recommends 8 similar movies based on your selection and displays their posters fetched from TMDB.
 
+🔗 **Live Demo:**  
+👉 [https://saakshammm-movie-rec-sys.hf.space](https://saakshammm-movie-rec-sys.hf.space)
+
+---
+
 ## 🔧 Features
 
-- Select a movie from a dropdown list
-- Get 8 similar movies with posters
-- Posters fetched live using the TMDB API
-- Works entirely in the browser (via Streamlit)
+- Select a movie from a dropdown list  
+- Get 8 similar movies with posters  
+- Posters fetched live using the TMDB API  
+- Works entirely in the browser (via Streamlit)  
 - Clean 2-row, 4-column layout
 
-## 🚀 How to Run
+---
+
+## 🚀 How to Run Locally
 
 ### 1. Clone the repository
-```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+```bash
+git clone https://github.com/saakshammm/movie-rec-sys.git
+cd movie-rec-sys
 ```
 
 ### 2. Install dependencies
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Add your TMDB API key
-Create a file named .env in the root of the project and paste:
-env
-```angular2html
+Create a .env file in the root directory:
+```bash
 TMDB_API_KEY=your_tmdb_api_key_here
 ```
-
 ### 4. Start the app
-```angular2html
+```bash
 streamlit run app.py
 ```
-
 ## 📦 Dataset and Artifacts
-All required files for this app (including pickles and raw CSVs) are hosted publicly here:
-
-
-[[`movie-rec`]](https://huggingface.co/datasets/saakshammm/movie-rec/tree/main)
-
-```
+All required files (CSV + pickle) are hosted publicly here:
+[📂 [movie-rec]](https://huggingface.co/datasets/saakshammm/movie-rec/tree/main)
 Includes:
-
+```angular181html
 tmdb_5000_movies.csv
-
 tmdb_5000_credits.csv
-
 movie_list.pkl
-
 similarity.pkl
 ```
 
 ## 📁 Project Structure
-
-```angular2html
+```bash
 .
 ├── app.py
 ├── data/
@@ -65,42 +61,41 @@ similarity.pkl
 │   ├── movie_list.pkl
 │   └── similarity.pkl
 ├── requirements.txt
-├── .env               # (not pushed to GitHub)
+├── .env               
 └── README.md
 ```
 
 ## 🌐 Deployment
-This app is ready for free hosting via Streamlit Cloud.
+This app is deployed via Hugging Face Spaces:
+🔗 https://saakshammm-movie-rec-sys.hf.space
 
-Push the code to a GitHub repo
-
-Go to Streamlit Cloud and deploy the repo
-
-Set the TMDB key via "Secrets" in Streamlit:
-
-Key: TMDB_API_KEY
-
-Value: your_actual_key
+If deploying elsewhere (e.g., Streamlit Cloud):
+* Push your repo to GitHub
+* Add your API key as a secret (e.g., TMDB_API_KEY)
+* Streamlit or other services will load it securely
 
 ## 🧠 Built With
-```angular2html
+```bash
 Streamlit
 Scikit-learn
-Nltk
+NLTK
 Pandas
 Requests
 The Movie Database (TMDB) API
-Pickle 
+Pickle
 ```
 
 ## 📸 Example
-Select a movie → Get recommendations → See poster previews instantly.
+Select a movie -> Get recommendations -> See poster previews instantly.
+
 ![img.png](img.png)
+
 ![img_1.png](img_1.png)
 
 ## 🔐 Note on Security
-Your TMDB API key is loaded securely from environment variables using python-dotenv. Never hardcode keys.
+Your TMDB API key is loaded securely from environment variables using python-dotenv.
+Never hardcode your API keys in public files.
 
 ## 👤 Author
 Saksham Kumar
-
+[🔗 Hugging Face Profile](https://huggingface.co/saakshammm)
