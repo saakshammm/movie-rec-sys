@@ -39,7 +39,7 @@ streamlit run app.py
 All required files for this app (including pickles and raw CSVs) are hosted publicly here:
 
 
-[[`movie-rec`]]( https://huggingface.co/datasets/saakshammm/movie-rec/tree/main/data)
+[[`movie-rec`]](https://huggingface.co/datasets/saakshammm/movie-rec/tree/main)
 
 ```
 Includes:
