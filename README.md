@@ -35,7 +35,7 @@ TMDB_API_KEY=your_tmdb_api_key_here
 streamlit run app.py
 ```
 
-### 📦 Dataset and Artifacts
+## 📦 Dataset and Artifacts
 All required files for this app (including pickles and raw CSVs) are hosted publicly here:
 
 
@@ -52,7 +52,9 @@ movie_list.pkl
 
 similarity.pkl
 ```
-📁 Project Structure
+
+## 📁 Project Structure
+
 ```angular2html
 .
 ├── app.py
@@ -67,7 +69,7 @@ similarity.pkl
 └── README.md
 ```
 
-### 🌐 Deployment
+## 🌐 Deployment
 This app is ready for free hosting via Streamlit Cloud.
 
 Push the code to a GitHub repo
@@ -80,7 +82,7 @@ Key: TMDB_API_KEY
 
 Value: your_actual_key
 
-🧠 Built With
+## 🧠 Built With
 ```angular2html
 Streamlit
 Scikit-learn
@@ -90,25 +92,15 @@ Requests
 The Movie Database (TMDB) API
 Pickle 
 ```
-## 🧠 Model Artifacts
 
-This app requires two `.pkl` files to run locally:
-
-- [`movie_list.pkl`](https://drive.google.com/file/d/10-fy6yDd5ijhwn9keAe7oGU1MBXhO178/view?usp=sharing)
-- [`similarity.pkl`](https://drive.google.com/file/d/102huNjyF6_IIhDuR3HxX-oNsbFb6j9Y_/view?usp=sharing)
-
-Place them inside a local `artifacts/` folder like this:
-
-![img_2.png](img_2.png)
-
-### 📸 Example
+## 📸 Example
 Select a movie → Get recommendations → See poster previews instantly.
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 
-### 🔐 Note on Security
+## 🔐 Note on Security
 Your TMDB API key is loaded securely from environment variables using python-dotenv. Never hardcode keys.
 
-### 👤 Author
+## 👤 Author
 Saksham Kumar
 
